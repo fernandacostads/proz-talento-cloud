@@ -2,9 +2,9 @@
 
 # 1- Escreva um código que imprima todos os números exceto o número 13.
 print("\nCom for:\n")              
-for i in range(20):
+for i in range(1,21,1):
     if i != 13:
-        print(i+1)
+        print(i)
 
 # 2- Escreva mais um código que resolva o mesmo problema, mas dessa vez usando o laço de repetição 'while'.
 print("\nCom while:\n")   
