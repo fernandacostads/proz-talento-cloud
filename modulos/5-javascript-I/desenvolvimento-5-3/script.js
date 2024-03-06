@@ -1,19 +1,33 @@
-const titulo = document.getElementById("titulo");
-const link = document.querySelector("a");
-const listaNaoOrdenada = document.querySelector("ul");
-const listaOrdenada = document.getElementById("lista-ordenada");
+// Cria o elemento título
+const titulo = document.createElement('h1');
+titulo.textContent = 'Exercício de Javascript';
+titulo.id = 'titulo';
+titulo.style.color = 'Green';
+titulo.style.fontSize = '24px';
 
-titulo.innerText = "Projeto com JavaScript";
-link.innerText = "Proz Educação";
+// Adiciona o título ao corpo da página
+document.body.appendChild(titulo);
 
-listaNaoOrdenada.innerHTML = `
-    <li>Exemplo de conteúdo 1</li>
-    <li>Exemplo de conteúdo 2</li>
-    <li>Exemplo de conteúdo 3</li>
-`;
+// Cria o elemento do produto
+const produto = document.createElement('div');
+produto.classList.add('produto');
 
-listaOrdenada.innerHTML = `
-    <li><a href="https://www.google.com">Google</a></li>
-    <li><a href="https://www.youtube.com">YouTube</a></li>
-    <li><a href="https://aws.amazon.com/">AWS</a></li>
-`;
+// Cria o nome do produto
+const nomeProduto = document.createElement('h2');
+nomeProduto.textContent = 'Nome do Produto';
+
+// Cria a descrição do produto
+const descricaoProduto = document.createElement('p');
+descricaoProduto.textContent = 'Descrição do produto.';
+
+// Cria o preço do produto
+const precoProduto = document.createElement('span');
+precoProduto.textContent = 'R$ 100,00';
+
+// Adiciona os elementos do produto ao elemento produto
+produto.appendChild(nomeProduto);
+produto.appendChild(descricaoProduto);
+produto.appendChild(precoProduto);
+
+// Adiciona o produto ao corpo da página
+document.body.appendChild(produto);
